@@ -78,6 +78,8 @@ The default workflow path is `./WORKFLOW.md`. A CLI argument may provide an expl
 
 `WORKFLOW.md` contains optional YAML front matter followed by a Markdown prompt template. Unknown top-level config keys are ignored.
 
+Prompt templates use Go `text/template` syntax with strict missing-key behavior. For example, use `{{ .task.identifier }}`, not Liquid-style `{{ task.identifier }}`.
+
 Required dispatch config:
 
 - `tracker.kind: clickup`

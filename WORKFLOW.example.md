@@ -47,11 +47,11 @@ opencode:
 ---
 You are working on this ClickUp task.
 
-Task: {{ task.identifier }} - {{ task.title }}
-Status: {{ task.status }}
-URL: {{ task.url }}
+Task: {{ .task.identifier }} - {{ .task.title }}
+Status: {{ .task.status }}
+URL: {{ .task.url }}
 
 Description:
-{{ task.description }}
+{{ .task.description }}
 
 Implement the task in this workspace. When finished, leave the work ready for review.
