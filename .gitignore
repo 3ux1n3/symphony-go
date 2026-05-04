@@ -1,0 +1,16 @@
+# Go
+bin/
+coverage.out
+
+# Local runtime state
+symphony_workspaces/
+*.log
+
+# Secrets and local config
+.env
+WORKFLOW.md
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
